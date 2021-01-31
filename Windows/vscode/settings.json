@@ -1,0 +1,109 @@
+{
+    "window.zoomLevel": 0,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "explorer.compactFolders": false,
+    
+    // vim
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "d"],
+            "after": ["d", "d"]
+        },
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "vim.normalModeKeyBindings": [
+        {
+            "before" : ["<leader>", "f"],
+            "commands" : [
+                "workbench.view.explorer",
+            ]
+        }
+    ],
+    // vim
+    
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "sync.gist": "ccd7255288b5ce8c7477f7b046adb742",
+    
+    // workbench
+    "workbench.editor.showIcons": false,
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorCustomizations": {
+        "editor.background": "#282828",
+        "activityBar.background": "#282828",
+        "activityBar.activeFocusBorder":"#ff0000",
+        "sideBar.background": "#282828",
+        "sideBar.foreground": "#cdbb84",
+        "sideBar.border": "#2b2a2a",
+        "sideBar.dropBackground": "#ff0000",
+        "sideBarTitle.foreground": "#789b7f",
+        "sideBarSectionHeader.foreground": "#acb527",
+        "sideBarSectionHeader.border": "#2b2a2a",
+       
+        "editorLineNumber.foreground": "#5e5c54",
+        "editorLineNumber.activeForeground": "#d79921",
+
+        "editor.lineHighlightBackground": "#3c3836",
+
+        "editorCursor.background":"#3c3836",
+        "editor.selectionHighlightBackground": "#3c3836",
+        "editor.selectionBackground": "#504945",
+        
+        "editorGroup.border":"#443e3b",
+        "editorGroupHeader.tabsBackground": "#282828",
+        "editorGroupHeader.tabsBorder": "#282828",
+
+        "list.activeSelectionBackground": "#3c3836",
+        "list.focusBackground": "#3c3836",  
+
+        "statusBar.background": "#3c3836",
+        "statusBar.foreground": "#cdbb84",
+        "statusBar.noFolderBackground":"#3c3836",
+        "statusBarItem.remoteBackground":"#a89985",
+        "statusBarItem.remoteForeground":"#282828",
+
+        "terminal.border": "#2b2a2a",
+        "scrollbar.shadow": "#bbda5500"
+    },
+    // workbench
+
+    // editor
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.renderLineHighlight": "all",
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers":"relative",
+    "editor.suggestSelection": "first",
+    "editor.fontFamily": "Cascadia Code",
+    "editor.lineHeight": 22,
+    "zenMode.fullScreen": false,
+    "workbench.tree.indent": 18,
+    "workbench.tree.renderIndentGuides": "none",
+    "breadcrumbs.enabled": false,
+    "editor.tabSize": 2,
+    "workbench.iconTheme": null,
+    // editor
+}
+
