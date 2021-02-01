@@ -1,0 +1,44 @@
+[
+    // movement 
+    { "key": "ctrl+a j", "command": "workbench.action.terminal.toggleTerminal" },
+    { "key": "ctrl+a k", "command": "workbench.action.terminal.toggleTerminal" },
+    { "key": "ctrl+a l", "command": "workbench.view.explorer" },
+    { "key": "ctrl+a h", "command": "workbench.view.explorer" },
+    // movement
+
+    // explorer 
+    { "key": "d d", "command": "deleteFile", "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceMoveableToTrash && !explorerResourceReadonly && !inputFocus" },
+    { "key": "ctrl+n f", "command": "explorer.newFile", "when": "explorerViewletFocus" },
+    { "key": "ctrl+n d", "command": "explorer.newFolder", "when": "explorerViewletFocus" },
+    // explorer 
+
+    // remove defaults
+    { "key": "ctrl+w", "command": "-extension.vim_ctrl+w", "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl" },
+    { "key": "ctrl+1", "command": "-workbench.action.focusFirstEditorGroup" },
+    { "key": "ctrl+2", "command": "-workbench.action.focusSecondEditorGroup" },
+    { "key": "ctrl+shift+2", "command": "-extension.vim_ctrl+shift+2", "when": "editorTextFocus && vim.active && vim.use<C-shift+2>" },
+    { "key": "ctrl+3", "command": "-workbench.action.focusThirdEditorGroup" },
+    { "key": "ctrl+4", "command": "-workbench.action.focusFourthEditorGroup" },
+    { "key": "ctrl+5", "command": "-workbench.action.focusFifthEditorGroup" },
+    { "key": "ctrl+6", "command": "-workbench.action.focusSixthEditorGroup" },
+    { "key": "ctrl+7", "command": "-workbench.action.focusSeventhEditorGroup" },
+    { "key": "ctrl+9", "command": "-workbench.action.lastEditorInGroup" },
+    { "key": "ctrl+8", "command": "-workbench.action.focusEighthEditorGroup" },
+    { "key": "ctrl+k ctrl+7", "command": "-editor.foldLevel7", "when": "editorTextFocus && foldingEnabled" },
+    { "key": "ctrl+k ctrl+6", "command": "-editor.foldLevel6", "when": "editorTextFocus && foldingEnabled" },
+    { "key": "ctrl+shift+5", "command": "-workbench.action.terminal.split", "when": "terminalFocus && terminalProcessSupported" },
+    { "key": "ctrl+k ctrl+5", "command": "-editor.foldLevel5", "when": "editorTextFocus && foldingEnabled" },
+    { "key": "ctrl+k ctrl+4", "command": "-editor.foldLevel4", "when": "editorTextFocus && foldingEnabled" },
+    { "key": "ctrl+k ctrl+3", "command": "-editor.foldLevel3", "when": "editorTextFocus && foldingEnabled" },
+    { "key": "ctrl+k ctrl+2", "command": "-editor.foldLevel2", "when": "editorTextFocus && foldingEnabled" },
+    { "key": "ctrl+k ctrl+1", "command": "-editor.foldLevel1", "when": "editorTextFocus && foldingEnabled" },
+    { "key": "ctrl+a", "command": "-editor.action.selectAll" },
+    { "key": "ctrl+a", "command": "-list.selectAll", "when": "listFocus && listSupportsMultiselect && !inputFocus" },
+    { "key": "ctrl+a", "command": "-extension.vim_ctrl+a", "when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl" },
+    { "key": "ctrl+c", "command": "-editor.action.clipboardCopyAction" },
+    { "key": "ctrl+shift+`", "command": "-workbench.action.terminal.new" },
+    { "key": "ctrl+`", "command": "-workbench.action.terminal.toggleTerminal" },
+    { "key": "shift+delete", "command": "-deleteFile", "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus" },
+    { "key": "delete", "command": "deleteFile", "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceMoveableToTrash && !explorerResourceReadonly && !inputFocus" },
+    // remove defaults
+  ]
