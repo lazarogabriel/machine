@@ -1,6 +1,5 @@
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-Theme Zash
-
+Set-Theme half-life
     
 clear
