@@ -1,10 +1,15 @@
 {
-    "window.zoomLevel": 0,
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "terminal.integrated.shellArgs.windows": ["-NoLogo"],
+    "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\PowerShell.exe",
+    "terminal.integrated.fontSize": 17,
+
+    // explorer 
+    "explorer.compactFolders": false,
+
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "explorer.compactFolders": false,
     
     // vim
     "vim.easymotion": true,
@@ -50,60 +55,87 @@
     
     // workbench
     "workbench.editor.showIcons": false,
-    "workbench.colorTheme": "Default Dark+",
     "workbench.colorCustomizations": {
-        "editor.background": "#282828",
-        "activityBar.background": "#282828",
-        "activityBar.activeFocusBorder":"#ff0000",
-        "sideBar.background": "#282828",
-        "sideBar.foreground": "#cdbb84",
-        "sideBar.border": "#2b2a2a",
-        "sideBar.dropBackground": "#ff0000",
-        "sideBarTitle.foreground": "#789b7f",
-        "sideBarSectionHeader.foreground": "#acb527",
+        "editor.background": "#252526",
+        "activityBar.background": "#252526",
+        "sideBar.foreground": "#c2c2c2",  
+        "sideBar.background": "#262525",
+        // "activityBar.activeFocusBorder":"#ff0000",
+        // "sideBar.foreground": "#ff0000",
+        // "sideBar.border": "#ff0000",
+        // "sideBar.dropBackground": "#ff0000",
+        // "sideBarTitle.foreground": "#ff0000",
+        // "sideBarSectionHeader.foreground": "#ff0000",
         "sideBarSectionHeader.border": "#2b2a2a",
        
         "editorLineNumber.foreground": "#5e5c54",
-        "editorLineNumber.activeForeground": "#d79921",
+        // "editorLineNumber.activeForeground": "#ff0000",
 
-        "editor.lineHighlightBackground": "#3c3836",
+        "editor.lineHighlightBackground": "#2d2d2d",
 
-        "editorCursor.background":"#3c3836",
-        "editor.selectionHighlightBackground": "#3c3836",
-        "editor.selectionBackground": "#504945",
+        // "editorCursor.background":"#ff0000",
+        // "editor.selectionHighlightBackground": "#ff0000",
+        "editor.selectionBackground": "#363636",
         
-        "editorGroup.border":"#443e3b",
-        "editorGroupHeader.tabsBackground": "#282828",
-        "editorGroupHeader.tabsBorder": "#282828",
+        // "editorGroup.border":"#ff0000",
+        "editorGroupHeader.tabsBackground": "#252526",
+        "editorGroupHeader.tabsBorder": "#252526",
 
-        "list.activeSelectionBackground": "#3c3836",
-        "list.focusBackground": "#3c3836",  
+        "list.activeSelectionBackground": "#363636",
+        "list.focusBackground": "#363636",  
+        "list.errorForeground": "#c2c2c2",
+        "list.warningForeground": "#c2c2c2",
+        "gitDecoration.modifiedResourceForeground": "#c2c2c2",
+        "gitDecoration.ignoredResourceForeground": "#c2c2c2",
+        "gitDecoration.untrackedResourceForeground": "#c2c2c2",
 
-        "statusBar.background": "#3c3836",
+        "statusBar.background": "#252526",
         "statusBar.foreground": "#cdbb84",
-        "statusBar.noFolderBackground":"#3c3836",
         "statusBarItem.remoteBackground":"#a89985",
         "statusBarItem.remoteForeground":"#282828",
 
-        "terminal.border": "#2b2a2a",
-        "scrollbar.shadow": "#bbda5500"
+        "scrollbar.shadow": "#bbda5500",
+        "titleBar.activeBackground": "#252526",   
     },
+    "workbench.tree.indent": 18,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.iconTheme": null,
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.editor.tabSizing": "shrink",
     // workbench
+
+    // window
+    "window.titleSeparator": " ~ ", 
+    "window.titleBarStyle": "custom",
 
     // editor
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.renderLineHighlight": "all",
+    "editor.renderLineHighlight": "line",
+    "editor.occurrencesHighlight": false,
     "editor.minimap.enabled": false,
     "editor.lineNumbers":"relative",
     "editor.suggestSelection": "first",
-    "editor.fontFamily": "Cascadia Code",
+    "editor.fontFamily": "Cascadia Mono",
     "editor.lineHeight": 22,
-    "zenMode.fullScreen": false,
-    "workbench.tree.indent": 18,
-    "workbench.tree.renderIndentGuides": "none",
-    "breadcrumbs.enabled": false,
     "editor.tabSize": 2,
-    "workbench.iconTheme": null,
+    "editor.renderWhitespace": "none",
+    "breadcrumbs.enabled": false,
+    "editor.fontSize": 15,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [{
+            "scope": ["entity.name.type.namespace.cs", "entity.name.variable.property.cs" ],
+            "settings": {
+                "foreground": "#cecece"
+            }
+        },
+        {
+            "scope": ["keyword.other.using.cs"],
+            "settings": {
+                "foreground": "#569CD6",
+            }
+
+        }]
+    },
     // editor
 }
 

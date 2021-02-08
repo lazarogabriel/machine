@@ -7,7 +7,7 @@
     // movement
 
     // explorer 
-    { "key": "d d", "command": "deleteFile", "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceMoveableToTrash && !explorerResourceReadonly && !inputFocus" },
+    { "key": "d d", "command": "deleteFile", "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus" },
     { "key": "ctrl+n f", "command": "explorer.newFile", "when": "explorerViewletFocus" },
     { "key": "ctrl+n d", "command": "explorer.newFolder", "when": "explorerViewletFocus" },
     // explorer 
